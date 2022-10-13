@@ -1,0 +1,18 @@
+.slider {
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s;
+  
+  &__inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: grid;
+    column-gap: 16px;
+    width: 200%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+
+}

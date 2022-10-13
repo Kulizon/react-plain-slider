@@ -1,8 +1,20 @@
 {
-  "name": "slider",
-  "version": "0.1.1",
-  "private": true,
+  "name": "react-plain-slider",
+  "version": "0.0.2",
+  "private": false,
+  "description": "Simple slider for your React project with Typescript support 👋",
+  "author": "Kulizon",
+  "keywords": [
+    "react",
+    "typescript",
+    "components",
+    "ui",
+    "slider",
+    "carousel"
+  ],
+  "main": "index.ts",
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -13,12 +25,14 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.55.0",
     "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "clean": "del dist",
+    "build": "npm run clean && tsc && copy package.json README.md ./dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +53,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3"
+  },
+  "types": "./index.d.ts",
+  "license": "ISC"
 }
