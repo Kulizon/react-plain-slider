@@ -10,8 +10,8 @@ var __assign = (this && this.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 import { jsx as _jsx } from "react/jsx-runtime";
-import styles from "./Slide.module.css";
+import styles from "./Slide.module.scss";
 var Slide = function (props) {
-    return (_jsx("div", __assign({ className: "".concat(styles.slide, " ").concat(props.className ? props.className : "") }, { children: props.children })));
+    return (_jsx("div", __assign({ className: "".concat(styles.slide, " ").concat(props.className ? props.className : " ") }, { children: props.children })));
 };
 export default Slide;

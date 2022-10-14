@@ -11,7 +11,7 @@ var __assign = (this && this.__assign) || function () {
 };
 import { jsx as _jsx, Fragment as _Fragment } from "react/jsx-runtime";
 import { useState, useEffect, useRef } from "react";
-import styles from "./Slider.module.css";
+import styles from "./Slider.module.scss";
 var Slider = function (props) {
     var innerSliderRef = useRef(null);
     var sliderRef = useRef(null);

@@ -1,6 +1,6 @@
 import styles from "./Slide.module.scss";
 
-const Slide = (props: { children: any; className: string }) => {
+const Slide = (props: { children?: any; className?: string }) => {
   return (
     <div
       className={`${styles.slide} ${props.className ? props.className : " "}`}
